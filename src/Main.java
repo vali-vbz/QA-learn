@@ -15,6 +15,8 @@ public class Main {
         float z;
         z=(float)x/y;
 
+        long y2= 932222222222L;
+
         /*System.out.println("3.  "+z);
 
         System.out.println("4. ");
@@ -23,7 +25,7 @@ public class Main {
         System.out.println(20 + -(float)3*5 / 8 );
         System.out.println(5 + 15 / 3 * 2 - 8 % 3 );*/
 
-        long y2= 932222222222L;
+
 
         //System.out.println(x+ y +" rez diferit: " + x + y);
 
@@ -40,6 +42,12 @@ public class Main {
         // 1.1.
         hello("Valentin");
 
+//        System.out.println("3. model text: ");
+//        textModel3();
+//
+//        System.out.println("5. model text: ");
+//        textModel5();
+//
         // 1.2.
         System.out.println("1.2.  "+ callc.adunare(x,y));
 
@@ -52,11 +60,7 @@ public class Main {
         System.out.println("2. rez= "+callc.adunare(4,5));
         System.out.println("2. rez= "+callc.scadere(4,5));
 
-        System.out.println("3. model text: ");
-        textModel3();
 
-        System.out.println("5. model text: ");
-        textModel5();
 
         System.out.println("4. media= "+callc.media(4,5,9));
 
@@ -71,6 +75,43 @@ public class Main {
 
 
         callc.distantaViteza(170,0,0,12);
+
+        /// ----------------
+        System.out.println("\n"+"Part LAB 11");
+
+        LogicalOp opp= new LogicalOp();
+
+        int x3=55;
+        if (opp.isNumberEven(x3)) {
+            System.out.println("Numarul "+x3+" este par!");
+        }else
+        {
+            System.out.println("Numarul "+x3+" este impar!");
+        }
+
+        int x2=3;
+        opp.verifySwitch(x2);
+        x2=6;
+        opp.verifySwitch(x2);
+
+        System.out.println("Numarul mai mare este: "+opp.checkBiggerNumber(x2,x3)+" !");
+
+        System.out.println(opp.verifyTextAndNumber("FastTr",4));
+
+        System.out.println(opp.verifyEX6(4));
+
+        System.out.println(opp.verifyEX7(4));
+
+        String name1="Marinica";
+        int agex=40;
+        if ( opp.isEligibleToVote(agex) ){
+            System.out.println("Cetateanul "+name1+" are varsta legala de vot!");
+        }
+        else{
+            System.out.println("Cetateanul "+name1+" nu poate vota!");
+        }
+
+
 
     }  //////////////////  end main
 

@@ -21,6 +21,44 @@ int checkBiggerNumber(int num1, int num2){
         }
     }
 
+	public  String verifyEX6( int number){
+		if (number>8 || number == 6) {
+			return  "The amount of snow this winter was(cm): " + number;
+		} else  {
+			return "The forecast snow is(cm): " + number;
+		}
+	}
+	public  String verifyEX7( int number){
+		if (number>3 && number != 4) {
+			return  "The number is greater than 3 and not equal to 4";
+		} else if (number == 4)  {
+			return "The number is equal to 4";
+		} else if (number < 3)  {
+			return "The number is lower than 3";
+		} else {
+			return "";
+		}
+	}
+
+	public  void verifySwitch(int number){
+		switch(number) {
+			case 1:
+				System.out.println("Numarul primit este 1");
+				break;
+			case 2:
+				System.out.println("Numarul primit este 2");
+				break;
+			case 3:
+				System.out.println("Numarul primit este 3");
+				break;
+			case 4:
+				System.out.println("Numarul primit este 4");
+				break;
+
+			default:
+				System.out.println("Numarul primit este bine primit");;
+		}
+	}
 
 // numar par-impar
 boolean isNumberEven(int x){
